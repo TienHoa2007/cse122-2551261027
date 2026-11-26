@@ -1,0 +1,58 @@
+body {
+  margin: 0; /* xóa lề mặc định của trình duyệt */
+  padding: 40px 16px; /* chừa khoảng trống trên/dưới và hai bên */
+  min-height: 100vh; /* cao tối thiểu bằng 100% chiều cao màn hình */
+  box-sizing: border-box; /* padding không làm trang cao hơn màn hình */
+  background: linear-gradient(180deg, #7ec8e3, #0a5c8a);
+  font-family: 'Times New Roman', Times, serifs;
+}
+
+.bai-viet {
+  width: 820px;
+  max-width: 100%; /* màn hình nhỏ hơn thì tự co lại */
+  margin: 0 auto; /* căn khối ra giữa trang */
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.95); /* trắng, hơi trong suốt (95%) */
+  border-radius: 10px; /* bo góc 10px */
+  padding: 28px; /* khoảng đệm bên trong */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); /* đổ bóng nhẹ cho nổi */
+}
+
+.bai-viet h1 {
+  text-align: center;
+  color: #0b3d5c;
+  margin-top: 0;
+}
+
+.sapo {
+  background: #0b3d5c; /* nền xanh đậm */
+  color: #ffffff; /* chữ trắng */
+  font-style: italic; /* chữ nghiêng */
+  padding: 14px 18px; /* đệm trên-dưới 14px, trái-phải 18px */
+  border-radius: 6px; /* bo góc 6px */
+  line-height: 1.6;
+}
+
+.than-bai {
+  text-align: justify; /* căn đều hai bên */
+  line-height: 1.7;
+  color: #222;
+}
+
+.than-bai::first-letter {
+  color: #0b3d5c; /* xanh biển đậm */
+  font-size: 3rem; /* phóng to gấp 3 lần cỡ chữ gốc */
+  font-weight: bold; /* tô đậm */
+  float: left; /* nổi sang trái để chữ khác bao quanh */
+  line-height: 0.85; /* thu chiều cao dòng cho khớp */
+  padding: 0.1rem 0.4rem 0 0; /* trên, phải, dưới, trái */
+}
+
+.anh-bai {
+  float: right; /* ảnh nổi sang phải, chữ chạy vòng bên trái */
+  width: 280px;
+  max-width: 45%;
+  margin: 4px 0 12px 20px; /* chừa khoảng trống bên trái và dưới ảnh */
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
